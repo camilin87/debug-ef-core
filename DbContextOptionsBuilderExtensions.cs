@@ -4,7 +4,7 @@ namespace DebugEFCore
 {
   public static class DbContextOptionsBuilderExtensions
   {
-    public static void ConfigureLogging(this DbContextOptionsBuilder optionsBuilder, bool loggingEnabled)
+    public static void EnableLogging(this DbContextOptionsBuilder optionsBuilder, bool loggingEnabled = true)
     {
       if (loggingEnabled)
       {
