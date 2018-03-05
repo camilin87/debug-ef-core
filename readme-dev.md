@@ -9,8 +9,8 @@ Documentation for developers working on the project.
 ### Step 1: Package project  
 
 ```bash
-PROJECT_FILE=DebugEFCore/DebugEFCore.csproj && \
-  rm DebugEFCore/bin/Release/*.nupkg && \
+PROJECT_FILE=DebugEFCore.csproj && \
+  rm bin/Release/*.nupkg && \
   dotnet clean $PROJECT_FILE -c Release && \
   dotnet build $PROJECT_FILE -c Release && \
   dotnet pack $PROJECT_FILE -c Release
