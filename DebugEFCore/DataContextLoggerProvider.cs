@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Extensions.Logging;
 
-namespace store_scrapper_2.DAL.Db
+namespace DebugEFCore
 {
   internal class DataContextLoggerProvider : ILoggerProvider
   {
