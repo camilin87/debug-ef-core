@@ -10,7 +10,7 @@ Documentation for developers working on the project.
 
 ```bash
 PROJECT_FILE=DebugEFCore.csproj && \
-  rm bin/Release/*.nupkg && \
+  rm -f bin/Release/*.nupkg && \
   dotnet clean $PROJECT_FILE -c Release && \
   dotnet build $PROJECT_FILE -c Release && \
   dotnet pack $PROJECT_FILE -c Release
@@ -19,7 +19,7 @@ PROJECT_FILE=DebugEFCore.csproj && \
 ### Step 2: Publish nuget  
 
 ```bash
-dotnet nuget push DebugEFCore/bin/Release/DebugEFCore.*.nupkg \
+dotnet nuget push bin/Release/DebugEFCore.*.nupkg \
   -k `sudo security find-generic-password -w -gs NUGET_PUSH_KEY` \
   -s https://api.nuget.org/v3/index.json
 ```
