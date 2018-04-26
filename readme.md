@@ -19,6 +19,8 @@ public class SampleContext : DbContext
 }
 ```
 
+[Sample Project](https://github.com/camilin87/debug-ef-core-sample)  
+
 ## Installation  
 
 Follow the steps from the [`DebugEFCore` Nuget Package](https://www.nuget.org/packages/DebugEFCore/).  
